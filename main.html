@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="box.css">
+    <title>EFlix</title>
+</head>
+
+<body>
+    <header>
+        <div><img src="imagem/logo.jpg" alt="" class="logo"></div>
+        <div>
+            <ul class="menu">
+                <li><a href="#">Perfil</a></li>
+                <li><a href="#">Lista</a></li>
+                <li><a href="#">Ajuda</a></li>
+            </ul>
+        </div>
+
+    </header>
+
+    <main>
+        <form action="">
+            <div class="box">
+                <div class="addList">
+                    <div class="poster"><img src="imagem/aang.jpg" alt=""></div>
+                    <label><span style="color: white;">Adicionar a lista?</span></label>
+                    <label class="switch">
+                        <input type="checkbox" id="opcao1" onclick="chamarJanela()">
+                        <span class="slider round" ></span>
+                    </label>
+                </div>
+            </div>
+            <div class="box">
+                <div class="addList">
+                    <div class="poster"><img src="imagem/goonies.png" alt=""></div>
+                    <label><span style="color: white;">Adicionar a lista?</span></label>
+                    <label class="switch">
+                        <input type="checkbox" id="opcao2" onclick="chamarJanela()">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="box">
+                <div class="addList">
+                    <div class="poster"><img src="imagem/autoDaCompadecida.jpg" alt=""></div>
+                    <label><span style="color: white;">Adicionar a lista?</span></label>
+                    <label class="switch">
+                        <input type="checkbox" id="opcao3" onclick="chamarJanela()">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <div id="caixaMaior">
+        <p id="mensagemCaixa">Texto da caixa de aviso</p>
+        <button id="botaoOk" onclick="fecharJanela()">Ok</button>
+    </div>
+
+    <script src="box.js"></script>
+</body>
+
+</html>
